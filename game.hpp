@@ -42,7 +42,6 @@ public:
     void play();
     void welcome() const;
     void display() const;
-    void printMoves(bool falag = false) const;
     std::pair<std::string, std::string> getMoves(const std::string&) const; 
     bool isValidInput(const std::string& source, const std::string& destination);
 public:
@@ -106,8 +105,6 @@ void Game::play() {
     while (true) {
         while (whiteMove) {
             std::cin.clear();
-            printMoves(true);
-            std::wcout << std::endl;
             display();
             std::wcout << "white's turn: ";
             std::string move;
@@ -140,8 +137,6 @@ void Game::play() {
 
         while (blackMove) {
             std::cin.clear();
-            printMoves();
-            std::wcout << std::endl;
             display();
             std::wcout << "black's turn: ";
             std::string move;
