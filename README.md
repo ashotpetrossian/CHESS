@@ -7,4 +7,4 @@ Input takes first 2 chars as the source square, the second one as the destinatio
 In case of invalid input, the game waits until the move or the input will be valid.
 Supported: pawn enPassant capturing, stalemate, automatic queen promotion.
 
-Future considerations: Create Custom mode. Keep move database. Pawn promotion modes.
+Future considerations: Add pawn promotion modes. Add multiple player mode. Add DB for prev games.
